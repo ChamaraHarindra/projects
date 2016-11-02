@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Restaurant Map</title>
+<!-- Embed Google Font - Source Sans -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+<!--Main sylesheet -->
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<section class="top-bar"></section>
+<section class="main-container">
+  <div class="map"></div>
+  <div class="map-tools">
+    <div class="filter-left">
+      <div class="card">
+        <div class="filter-type">
+          <a href="#" id="my-location">
+            <img src="images/placeholder.png" alt="My Location"/>
+            <span>My Location</span>
+          </a>
+        </div>
+        <div class="filter-type">
+          <a href="#" id="filter">
+            <img src="images/funnel.png" alt="Search Filter"/>
+            <span>Search Filter</span>
+          </a>
+        </div>
+        <div class="filter-type">
+          <a href="#" id="list">
+            <img src="images/list.png" alt="List"/>
+            <span>List</span>
+          </a>
+        </div>
+        <div class="filter-type">
+          <a href="#" id="map">
+            <img src="images/map.png" alt="Map"/>
+            <span>Map</span>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="input-group">
+          <input type="text" class="input-box search"/>
+          <input type="submit" class="button search" value="GO"/>
+        </div>
+      </div>
+      <div class="card">
+        <div class="input-group">
+          <input type="text" class="input-box search-with-dropdown"/>
+          <select class="search-dropdown input-box">
+            <option value="">5 miles</option>
+            <option value="">10 miles</option>
+            <option value="">15 miles</option>
+            <option value="">20 miles</option>
+            <option value="">25 miles</option>
+          </select>
+          <input type="submit" class="button search-with-dropdown" value="GO"/>
+        </div>
+      </div>
+      <div class="card">
+        <div class="search-results">
+          <div class="search-results-box">
+            <label class="result-heading">17 Results found</label>
+              <div class="result-card">
+                <label class="result-card__heading">1. Yonkers, NY</label>
+                <p>140 Market street, Yonkers, NY 10710</p>
+                <p>914-709-1205</p>
+                <label class="result-card__heading direction">Get Directions From:</label>
+                <div class="input-group">
+                  <input type="text" class="input-box search"/>
+                  <input type="submit" class="button search" value="GO"/>
+                </div>
+                <button class="button hire">
+                  <img src="images/hire.png" alt="Hire"/>
+                  We are hiring - APPLY NOW!
+                </button>
+              </div>
+              <div class="result-card">
+                <label class="result-card__heading">2. Yonkers, NY</label>
+                <p>140 Market street, Yonkers, NY 10710</p>
+                <p>914-709-1205</p>
+                <label class="result-card__heading direction">Get Directions From:</label>
+                <div class="input-group">
+                  <input type="text" class="input-box search"/>
+                  <input type="submit" class="button search" value="GO"/>
+                </div>
+                <button class="button hire">
+                  <img src="images/hire.png" alt="Hire"/>
+                  We are hiring - APPLY NOW!
+                </button>
+              </div>
+              <div class="result-card">
+                <label class="result-card__heading">3. Yonkers, NY</label>
+                <p>140 Market street, Yonkers, NY 10710</p>
+                <p>914-709-1205</p>
+                <label class="result-card__heading direction">Get Directions From:</label>
+                <div class="input-group">
+                  <input type="text" class="input-box search"/>
+                  <input type="submit" class="button search" value="GO"/>
+                </div>
+                <button class="button hire">
+                  <img src="images/hire.png" alt="Hire"/>
+                  We are hiring - <strong>APPLY NOW!</strong>
+                </button>
+              </div>
+            </div>
+            <div class="cover-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

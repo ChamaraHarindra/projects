@@ -1,0 +1,26 @@
+{
+  "name": "Ui-test",
+  "description": "UI Test - Chamara Harindra",
+  "main": "Gruntfile.js",
+  "authors": [
+    "chamara-harindra"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "font-awesome": "Font-Awesome#~4.4.0",
+    "slick-carousel": "~1.5.8"
+  }
+}

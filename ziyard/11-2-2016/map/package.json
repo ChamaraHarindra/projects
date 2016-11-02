@@ -1,0 +1,14 @@
+{
+  "name": "Restaurant map",
+  "version": "1.0.0",
+  "description": "First project from Ziyard",
+  "main": "Gruntfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chamara-harindra",
+  "license": "ISC",
+}
