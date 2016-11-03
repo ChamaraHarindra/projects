@@ -15,4 +15,12 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
+
+	$( ".search-with-dropdown" ).click(function() {
+	  event.stopPropagation();
+	  $( ".results-address" ).slideToggle("slow");
+		$( ".results-address" ).toggleClass("hidden");
+	});
+
+
 })
