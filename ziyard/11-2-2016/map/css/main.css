@@ -841,10 +841,6 @@ a:hover {
   border-radius: 2px;
 }
 
-.input-box:hover {
-
-}
-
 .input-box.search {
   width: 85%;
   float: left;
@@ -872,6 +868,11 @@ a:hover {
   border-radius: 2px;
   cursor: pointer;
   width: 100%;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition: 0.2s all ease-in-out;
 }
 
 .button.green {
