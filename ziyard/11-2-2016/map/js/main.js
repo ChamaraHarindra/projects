@@ -15,4 +15,12 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
+
+	$( "#nearby" ).click(function() {
+	  event.stopPropagation();
+	  $( ".results-address" ).slideToggle("slow");
+		$( ".results-address" ).toggleClass("hidden");
+	});
+
+
 })
