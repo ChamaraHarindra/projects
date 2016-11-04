@@ -13,7 +13,6 @@ $(document).ready(function(){
 
   // Result pane slide down
 	$( "#nearby" ).click(function() {
-	  event.stopPropagation();
 	  $( ".results-address" ).slideToggle("slow");
 		$( ".results-address" ).toggleClass("hidden");
 	});
