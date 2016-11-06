@@ -59,12 +59,25 @@ a:hover {
   height: 100%;
 }
 
+.cover-up {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  background: white;
+  padding: 100px 2% 0;
+  z-index: 1;
+}
+
 .map-tools {
   position: absolute;
   left: 2%;
   top: 0;
   width: 96%;
-  margin-top: 20px;
+  margin-top: 10px;
+  z-index: 2;
+  max-height: 80px;
 }
 
 .card {
@@ -121,8 +134,43 @@ a:hover {
   font-size: 12px;
 }
 
+.filter-type a.tabs {
+  min-height: 32px;
+}
+
+.filter-type a.tabs#my-location {
+  background: url("../images/placeholder.png") no-repeat center 10px;
+}
+
+  .filter-type a.tabs#my-location:hover {
+    background: url("../images/placeholder-hover.png") no-repeat  center 10px;
+  }
+
+.filter-type a.tabs#filter {
+  background: url("../images/funnel.png") no-repeat  center 10px;
+}
+
+  .filter-type a.tabs#filter:hover {
+    background: url("../images/funnel-hover.png") no-repeat  center 10px;
+  }
+
+.filter-type a.tabs#list {
+  background: url("../images/list.png") no-repeat  center 10px;
+}
+
+    .filter-type a.tabs#list:hover {
+      background: url("../images/list-hover.png") no-repeat  center 10px;
+    }
+
+    .filter-type a.tabs#map {
+      background: url("../images/map.png") no-repeat  center 10px;
+    }
+
+        .filter-type a.tabs#map:hover {
+          background: url("../images/map-hover.png") no-repeat  center 10px;
+        }
+
 .filter-type a:hover, .filter-type a.current {
-  background: #e5f3f3;
   transition: 0.2s all ease-in-out;
 }
 
@@ -133,8 +181,13 @@ a:hover {
 }
 
 .filter-type a span {
-  padding: 0 10px;
+  padding: 40px 10px 0;
   display: block;
+}
+
+.gaps {
+  overflow: hidden;
+  padding: 10px 15px;
 }
 
 .input-group {
@@ -146,7 +199,7 @@ a:hover {
 .input-box {
   border: #5e7e8b 1px solid;
   width: 100%;
-  min-height: 45px;
+  min-height: 30px;
   padding: 0 10px;
   color: #012e55;
   outline: none;
@@ -174,7 +227,7 @@ a:hover {
   display: block;
   border: 1px solid #5e7e8b;
   background: #5e7e8b;
-  min-height: 45px;
+  min-height: 30px;
   padding: 6px 12px;
   color: #ffffff;
   border-radius: 2px;
@@ -230,33 +283,6 @@ a:hover {
 
 .scroll-box-inner.large {
   height: 600px;
-}
-
-.scroll-box-inner::-webkit-scrollbar {
-  width: .4em;
-}
-.scroll-box-inner::-webkit-scrollbar,
-.scroll-box-inner::-webkit-scrollbar-thumb {
-  overflow:visible;
-  border-radius: 4px;
-}
-.scroll-box-inner::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,.2);
-}
-.cover-bar {
-  position: absolute;
-  background: #fff;;
-  height: 100%;
-  top: 0;
-  right: 0;
-  width: .4em;
-  -webkit-transition: all .5s;
-  opacity: 1;
-}
-/* MAGIC HAPPENS HERE */
-.scroll-box:hover .cover-bar {
-   opacity: 0;
-  -webkit-transition: all .5s;
 }
 
 
