@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Restaurant Map</title>
@@ -9,11 +8,12 @@
     <!--Main sylesheet -->
     <link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
     <section class="top-bar"></section>
     <section class="main-container">
+        <!-- Put the map inside below -->
         <div class="map"></div>
+        <!-- Start of the map tools tab -->
         <div class="map-tools">
             <div class="card">
                 <div class="filter-type">
@@ -41,6 +41,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Content of tab 01 -->
             <div class="tab-content" id="tab-1">
                 <div class="card">
                     <div class="input-group">
@@ -49,6 +50,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Content of tab 02 -->
             <div class="tab-content" id="tab-2">
                 <div class="card">
                     <div class="input-group">
@@ -60,26 +62,41 @@
                             <option value="">20 miles</option>
                             <option value="">25 miles</option>
                         </select>
-                        <input type="submit" class="button search-with-dropdown" value="GO" />
+                        <input type="submit" class="button search-with-dropdown" value="GO" id="nearby"/>
                     </div>
                 </div>
             </div>
+            <!-- Content of tab 03 -->
             <div class="tab-content" id="tab-3">
+                <div class="card">
+                    <div class="input-group">
+                        <input type="text" class="input-box search-with-dropdown" />
+                        <select class="search-dropdown input-box">
+                            <option value="">5 miles</option>
+                            <option value="">10 miles</option>
+                            <option value="">15 miles</option>
+                            <option value="">20 miles</option>
+                            <option value="">25 miles</option>
+                        </select>
+                        <input type="submit" class="button search-with-dropdown" value="GO"/>
+                    </div>
+                </div>
                 <div class="card full-width">
                   <div class="scroll-box">
                       <div class="scroll-box-inner large">
                           <div class="container-fluid">
                               <div class="row">
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                            <label class="result-card__heading">1. Yonkers, NY</label>
-                                            <p>140 Market street, Yonkers, NY 10710</p>
-                                            <p>914-709-1205</p>
-                                            <label class="result-card__heading direction"><a href="#">Get Directions</a></label>
-                                            <button class="button hire">
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
                                                 <img src="images/hire.png" alt="Hire"/>
-                                                We are hiring - APPLY NOW!
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
                                             </button>
                                           </div>
                                           <div class="col-md-6">
@@ -87,66 +104,115 @@
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                                   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                       <div class="card shaded">
-                                          <div class="col-md-6">
-                                              s
+                                          <div class="col-md-6 top-padding">
+                                            <label class="result-card__heading large">1. Yonkers, NY</label>
+                                            <p class="large-text">140 Market street, Yonkers, NY 10710</p>
+                                            <p class="large-text"><strong>T</strong>: 914-709-1205 &nbsp;<a href="#">Get Directions</a></p>
+                                            <p class="large-text"><strong>Mon-Thu, Sun</strong>: 11:00AM - 10.00PM<br/><strong>Fri-Sat</strong>: 11:00AM - 11:00PM</p>
+                                            <button class="button green">
+                                                <img src="images/hire.png" alt="Hire"/>
+                                                <span>We are hiring - <strong>APPLY NOW!</strong></span>
+                                            </button>
                                           </div>
                                           <div class="col-md-6">
                                               <img src="images/map-image.jpg" class="mini-map" alt="Mini Map"/>
                                           </div>
                                       </div>
                                   </div>
+
                               </div>
                           </div>
                       </div>
@@ -154,6 +220,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Result pane, will slide down once the go button is clicked -->
             <div class="card hidden results-address">
                 <div class="scroll-box">
                     <div class="scroll-box-inner">
@@ -162,40 +229,40 @@
                             <label class="result-card__heading">1. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
-                            <label class="result-card__heading direction">Get Directions From:</label>
+                            <label class="result-card__heading small">Get Directions From:</label>
                             <div class="input-group">
                                 <input type="text" class="input-box search" />
                                 <input type="submit" class="button search" value="GO" />
                             </div>
-                            <button class="button hire">
+                            <button class="button hire green">
                                 <img src="images/hire.png" alt="Hire"/>
-                                We are hiring - APPLY NOW!
+                                We are hiring - <strong>APPLY NOW!</strong>
                             </button>
                         </div>
                         <div class="result-card">
                             <label class="result-card__heading">2. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
-                            <label class="result-card__heading direction">Get Directions From:</label>
+                            <label class="result-card__heading small">Get Directions From:</label>
                             <div class="input-group">
                                 <input type="text" class="input-box search" />
                                 <input type="submit" class="button search" value="GO" />
                             </div>
-                            <button class="button hire">
+                            <button class="button hire green">
                                 <img src="images/hire.png" alt="Hire"/>
-                                We are hiring - APPLY NOW!
+                                We are hiring - <strong>APPLY NOW!</strong>
                             </button>
                         </div>
                         <div class="result-card">
                             <label class="result-card__heading">3. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
-                            <label class="result-card__heading direction">Get Directions From:</label>
+                            <label class="result-card__heading small">Get Directions From:</label>
                             <div class="input-group">
                                 <input type="text" class="input-box search" />
                                 <input type="submit" class="button search" value="GO" />
                             </div>
-                            <button class="button hire">
+                            <button class="button hire green">
                                 <img src="images/hire.png" alt="Hire"/>
                                 We are hiring - <strong>APPLY NOW!</strong>
                             </button>
@@ -209,5 +276,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </body>
-
 </html>

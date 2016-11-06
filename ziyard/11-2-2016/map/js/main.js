@@ -1,10 +1,6 @@
-//$( "#my-location" ).click(function() {
-  //event.stopPropagation();
-  //$( "#location-seeker" ).slideToggle("slow");
-//});
-
 $(document).ready(function(){
 
+  // Tab switching
 	$('a.tabs').click(function(){
 		var tab_id = $(this).attr('data-tab');
 
@@ -15,12 +11,10 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
-
-	$( ".search-with-dropdown" ).click(function() {
+  // Result pane slide down
+	$( "#nearby" ).click(function() {
 	  event.stopPropagation();
 	  $( ".results-address" ).slideToggle("slow");
 		$( ".results-address" ).toggleClass("hidden");
 	});
-
-
 })
