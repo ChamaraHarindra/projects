@@ -12,7 +12,20 @@
     <section class="top-bar"></section>
     <section class="main-container">
         <!-- Put the map inside below -->
-        <div class="map"></div>
+        <div class="map">
+            <a class="map-point" data-placement="top" id="pop-1"></a>
+            <div class="webui-popover-content">
+                <label class="result-card__heading">Yonkers, NY</label>
+                <p class="large-text">
+                    140 Market street, Yonkers, NY 10710<br/>
+                    914-709-1205 | <a href="#">Get directions</a>
+                </p>
+                <button class="button hire green">
+                    <img src="images/hire.png" alt="Hire"/>
+                    We are hiring - <strong>APPLY NOW!</strong>
+                </button>
+            </div>
+        </div>
         <!-- Start of the map tools tab -->
         <div class="map-tools">
             <div class="card">
@@ -54,7 +67,7 @@
                 <div class="scroll-box">
                     <div class="scroll-box-inner">
                         <label class="result-heading">17 Results found</label>
-                        <div class="result-card">
+                        <div class="result-card" id="result-1">
                             <label class="result-card__heading">1. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
@@ -68,7 +81,7 @@
                                 We are hiring - <strong>APPLY NOW!</strong>
                             </button>
                         </div>
-                        <div class="result-card">
+                        <div class="result-card" id="result-2">
                             <label class="result-card__heading">2. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
@@ -82,7 +95,7 @@
                                 We are hiring - <strong>APPLY NOW!</strong>
                             </button>
                         </div>
-                        <div class="result-card">
+                        <div class="result-card" id="result-3">
                             <label class="result-card__heading">3. Yonkers, NY</label>
                             <p>140 Market street, Yonkers, NY 10710</p>
                             <p>914-709-1205</p>
