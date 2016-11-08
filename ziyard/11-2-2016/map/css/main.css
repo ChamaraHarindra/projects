@@ -47,8 +47,10 @@ a:hover {
 .top-bar {
   width: 100%;
   background: #e5f3f3;
-  min-height: 50px;
+  min-height: 80px;
   margin-bottom: 10px;
+  position: fixed;
+  z-index: 5;
 }
 
 .main-container {
@@ -61,23 +63,24 @@ a:hover {
   background: #446CB3;
   width: 100%;
   height: 100%;
+  top: 80px;
 }
 
 .cover-up {
   width: 100%;
   top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
   position: absolute;
-  background: white;
-  padding: 100px 2% 0;
+  background: #ffffff;
+  padding: 172px 2% 0;
   z-index: 1;
 }
 
 .map-tools {
   position: absolute;
   left: 2%;
-  top: 0;
+  top: 80px;
   width: 96%;
   margin-top: 10px;
   z-index: 2;
@@ -146,7 +149,7 @@ a:hover {
   background: url("../images/placeholder.png") no-repeat center 10px;
 }
 
-  .filter-type a.tabs#my-location:hover {
+  .filter-type a.tabs#my-location:hover, .filter-type a.tabs#my-location.current {
     background: url("../images/placeholder-hover.png") no-repeat  center 10px;
   }
 
@@ -154,7 +157,7 @@ a:hover {
   background: url("../images/funnel.png") no-repeat  center 10px;
 }
 
-  .filter-type a.tabs#filter:hover {
+  .filter-type a.tabs#filter:hover, .filter-type a.tabs#filter.current {
     background: url("../images/funnel-hover.png") no-repeat  center 10px;
   }
 
@@ -162,7 +165,7 @@ a:hover {
   background: url("../images/list.png") no-repeat  center 10px;
 }
 
-    .filter-type a.tabs#list:hover {
+    .filter-type a.tabs#list:hover, .filter-type a.tabs#list.current {
       background: url("../images/list-hover.png") no-repeat  center 10px;
     }
 
@@ -170,7 +173,7 @@ a:hover {
       background: url("../images/map.png") no-repeat  center 10px;
     }
 
-        .filter-type a.tabs#map:hover {
+        .filter-type a.tabs#map:hover, .filter-type a.tabs#map.current {
           background: url("../images/map-hover.png") no-repeat  center 10px;
         }
 
@@ -281,7 +284,7 @@ a:hover {
 
 .scroll-box-inner {
   width: 100%;
-  height: 400px;
+  height: 650px;
   overflow-y: scroll;
 }
 
