@@ -12,7 +12,7 @@ html,body {
 }
 
 html,body {
-	height: 100%;	
+	height: 100%;
 }
 
 * {
@@ -56,6 +56,16 @@ a:hover {
 .input-group {
   overflow: hidden;
   width: 100%;
+}
+
+@media(min-width:768px) {
+  .input-group.small {
+    width: 70%;
+  }
+
+  .button.small {
+    width: 70%;
+  }
 }
 
 .input-box {
@@ -203,7 +213,17 @@ input.button {
   }
 }
 
-
+.map-no {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background: #e74c3c;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 7px 11px;
+  border-radius: 50%;
+}
 
 label.result-heading {
     padding: 15px;
@@ -215,42 +235,38 @@ label.result-heading {
     color: #e74c3c;
 }
 
-.result-card {
-    padding: 0 15px 15px;
+.map-results {
+    padding: 40px 40px 15px 40px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #dedede;
+    position: relative;
 }
 
-label.result-card__heading {
-    font-size: 18px;
+label.map-results__heading {
+    font-size: 26px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     display: block;
 }
 
-label.result-card__heading.large {
-    font-size: 22px;
-}
-
-label.result-card__heading.small {
-    font-size: 14px;
-    padding-left: 15px;
-}
-
-.result-card p {
-    display: block;
-    padding-left: 15px;
+label.map-results__heading.small {
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
-.result-card .input-group {
+.map-results p {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.map-results .input-group {
     padding-top: 0;
 }
 
 .tab-content{
   display: none;
   overflow: hidden;
-	
+
 }
 
 .tab-content.current{
@@ -274,12 +290,24 @@ p.large-text {
 .map-point {
   right: 40%;
   top: 40%;
-  width: 20px;
-  height: 20px;
-  background: black;
+  background: #e74c3c;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 7px 11px;
+  border-radius: 50%;
   position: absolute;
   display: block;
   cursor: pointer;
+}
+
+.map-point:hover {
+  color: #ffffff;
+}
+
+.map-point#location-2 {
+  right: 45%;
+  top: 42%;
 }
 
 .location-search {
@@ -350,5 +378,45 @@ li {
 		width: 50%;
 		max-height: none;
 		margin: 0;
+    height: 100%;
+    max-height: 500px;
 	}
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 0 0 5px 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+.card.shaded {
+  background: #fcfcfc;
+  border: 1px solid #fcfcfc;
+  max-width: none;
+  margin: 10px 0 10px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.29);
+  -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.29);
+  box-shadow:         0px 0px 3px 0px rgba(50, 50, 50, 0.29);
+  padding: 15px 0;
+}
+
+.card.shaded:hover {
+  border: 1px solid #ccc;
+  transition: 0.2s all ease-in-out;
+}
+
+.tab-content .mini-map {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+@media(min-width:768px) {
+  .tab-content .mini-map {
+    margin-top: 0;
+  }
 }
