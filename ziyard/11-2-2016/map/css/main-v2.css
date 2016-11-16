@@ -90,7 +90,7 @@ a:hover {
 }
 
 .input-box.search-with-dropdown {
-  width: 80%;
+  width: 60%;
   float: left;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -113,9 +113,21 @@ a:hover {
   cursor: pointer;
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
 
-.button#mylocation {
+.button.search-location {
+  width: 20%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  float: left;
+}
+
+.button.search-location:hover {
+  color: #ffffff;
+}
+
+.button.fancy {
     background: transparent;
     color: #0ba89d;
     border: 2px solid #0ba89d;
@@ -123,12 +135,12 @@ a:hover {
     z-index: 1;
 }
 
-.button#mylocation:hover {
+.button.fancy:hover {
     color: #ffffff;
     transition: 0.2s all ease-in-out;
 }
 
-.button#mylocation:before {
+.button.fancy:before {
     display: block;
     content: "";
     background: #0ba89d;
@@ -140,9 +152,13 @@ a:hover {
     top: 0;
 }
 
-.button#mylocation:hover:before {
+.button.fancy:hover:before {
     height: 100%;
     transition: 0.2s all ease-in-out;
+}
+
+.btn-icon {
+  margin-right: 5px;
 }
 
 input.button {
@@ -172,7 +188,7 @@ input.button {
 }
 
 .button.hire {
-  margin: 0 3%;
+  margin: 10px 3% 0;
   width: 94%;
   color: #ffffff;
   line-height: 100%;
@@ -201,7 +217,11 @@ input.button {
 
 .search-btn-group .button {
     float: left;
-    width: 40%;
+}
+
+.button.tool-btn {
+  width: 28%;
+  margin: 0 3% 0 0;
 }
 
 @media(min-width:768px) {
@@ -212,6 +232,32 @@ input.button {
   .search-btn-group .btn-txt {
       width: 12%;
   }
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+
+.loader img {
+  left: 47%;
+  position: absolute;
+  top: 50%;
+}
+
+.loader:after {
+  content: "Please Wait";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .map-no {
@@ -347,12 +393,12 @@ p.large-text {
 .location-search {
   padding: 15px 0;
   overflow: hidden;
+  background: #fafdfd;
 }
 
 .content-wrapper {
 	position:  relative;
   	top: 80px;
-	height: 100%;
 }
 
 .result-text {
@@ -366,55 +412,15 @@ p.large-text {
 	color: red;
 }
 
-.nav-tabs {
-	overflow: hidden;
-	background: #eeeeee;
-}
-
-.nav-tabs ul {
-	margin: 0;
-	overflow: hidden;
-}
-
-li {
-	margin-right: 10px;
-	float: left;
-	display: block;
-}
-
-.nav-tabs ul li a {
-	background: #eeeeee;
-	padding: 15px 50px;
-	font-size: 20px;
-	text-decoration: none;
-	color: #012e55;
-	display: block;
-}
-
-.nav-tabs ul li a:hover,
-.nav-tabs ul li a.current {
-	background: #ffffff;
-	transition: 0.2s all ease-in-out;
-}
-
 .map {
-	width: 96%;
-	height: 250px;
+	width: 100%;
+	height: 100vh;
 	background: #1F92C3;
-	margin: 20px 2%;
-	position: relative;
+	position: absolute;;
 }
 
-@media(min-width:768px) {
-	.map {
-		position: absolute;
-		right: 0;
-		width: 50%;
-		max-height: none;
-		margin: 0;
-    height: 100%;
-    max-height: 500px;
-	}
+.tab-data {
+  position: relative;
 }
 
 .card {
@@ -491,6 +497,37 @@ li {
 	width: 100% !important;
 }
 
+.result-card {
+    padding: 0 15px 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dedede;
+}
+
+label.result-card__heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+label.result-card__heading.large {
+    font-size: 22px;
+}
+
+label.result-card__heading.small {
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.result-card p {
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.result-card .input-group {
+    padding-top: 0;
+}
 
 .result-card__heading.large {
 	font-size: 20px;
@@ -500,11 +537,34 @@ li {
 	color: #000000;
 }
 
-.container.list-view-main {
+.results-address {
+  position: relative;
+  z-index: 2;
+}
+
+.gap {
+  margin-bottom: 10px;
+}
+
+.scroll-box {
+  position: relative;
+}
+
+.scroll-box-inner {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.list-view-main {
     overflow: hidden;
     position: relative;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+  background: white;
+}
+
+.list-view-main .container {
+  overflow: hidden;
 }
 
 .grid-to-list button {
@@ -512,11 +572,10 @@ li {
 	width: 40px;
 	margin-right: 10px;
 	padding: 10px 0;
-	
+
 }
 
 .grid-to-list button img {
 	margin: 0;
-	
-}
 
+}

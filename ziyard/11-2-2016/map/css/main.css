@@ -310,14 +310,8 @@ a:hover {
 
 .scroll-box-inner {
   width: 100%;
-  height: 650px;
   overflow-y: scroll;
 }
-
-.scroll-box-inner.large {
-  height: 600px;
-}
-
 
 label.result-heading {
     padding: 15px;

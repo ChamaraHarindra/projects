@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 
-	})
+	});
 
   // Result pane slide down
 	$( "#nearby" ).click(function() {
@@ -46,4 +46,11 @@ $(document).ready(function(){
 	//Popover for map pointer
 	$('a.map-point').webuiPopover();
 
-})
+});
+
+$(function(){
+    $( "#nearby" ).click(function(){
+			  var h = $('.scroll-box-inner').offset()
+        $('.scroll-box-inner').css('max-height', ($(window).height() - h.top) + 'px');
+    });
+  });
