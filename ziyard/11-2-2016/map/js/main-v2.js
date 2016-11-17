@@ -34,7 +34,7 @@ $(document).ready(function(){
 	});
 
 	// Result pane slide down
-	$( "#search-location" ).click(function() {
+/*	$( "#search-location" ).click(function() {
 	  event.stopPropagation();
 
 	  $( ".results" ).slideToggle("slow");
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		//show the loading screen
 		$('div.loader').show();
     setTimeout(function() { $("div.loader").hide(); }, 1000);
-	});
+	});*/
 
 
 });
@@ -51,12 +51,7 @@ $(document).ready(function(){
 //100% height on the search results
 $(function(){
     $( "#my-location" ).click(function(){
-			  var h = $('.scroll-box-inner').offset()
-        $('.scroll-box-inner').css('max-height', ($(window).height() - h.top) + 'px');
-    });
-
-		$( "#search-location" ).click(function(){
-			  var h = $('.scroll-box-inner').offset()
+			  var h = $('.tab-data').offset()
         $('.scroll-box-inner').css('max-height', ($(window).height() - h.top) + 'px');
     });
 //100% height on the map
