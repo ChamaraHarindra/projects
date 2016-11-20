@@ -114,7 +114,7 @@ a:hover {
 }
 
 .card {
-  background: #fff;
+  background: #ecf0f1;
   border-radius: 2px;
   display: block;
   overflow: hidden;
@@ -232,7 +232,7 @@ a:hover {
 .input-box {
   border: #5e7e8b 1px solid;
   width: 100%;
-  min-height: 30px;
+  height: 30px;
   padding: 0 10px;
   color: #012e55;
   outline: none;
@@ -266,6 +266,11 @@ a:hover {
   border-radius: 2px;
   cursor: pointer;
   width: 100%;
+}
+
+input.button {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .button:hover {
